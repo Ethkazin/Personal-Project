@@ -1,18 +1,13 @@
 package main.model;
-
+import main.ttrpg;
 // 
 public class Ancestry {
     String name;
-    String ttrpg;
 
-    public Ancestry(String name, String ttrpg) {
+    public Ancestry(String name) {
         this.name = name;
-        this.ttrpg = ttrpg;
     }
 
-    public String getTtrpg(){
-        return this.ttrpg;
-    }
     public String getName(){
         return this.name;
     }
