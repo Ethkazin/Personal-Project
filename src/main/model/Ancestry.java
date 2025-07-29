@@ -1,17 +1,21 @@
 package main.model;
 
-import java.util.ArrayList;
-
 // 
 public class Ancestry {
-    ArrayList<String> ancestries = new ArrayList<>();
-    String ancestry;
-    public ArrayList<String> Ancestry() {
-        return ancestries;
+    String name;
+    String ttrpg;
+
+    public Ancestry(String name, String ttrpg) {
+        this.name = name;
+        this.ttrpg = ttrpg;
     }
-    
-    public String getAncestry(String ancestry) {
-        return ancestry;
+
+    public String getTtrpg(){
+        return this.ttrpg;
     }
+    public String getName(){
+        return this.name;
+    }
+
 
 }
