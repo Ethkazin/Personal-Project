@@ -10,6 +10,7 @@ public class Main {
         String dnd = "Dungeons & Dragons";
         String pf = "Pathfinder";
 
+        // Move this into a database to store it somewhere else not in the main
         Ttrpg system1 = new Ttrpg(dnd, 5);
         Ttrpg system2 = new Ttrpg(dnd, 4);
         Ttrpg system3 = new Ttrpg(dnd, 3.5);
@@ -41,6 +42,7 @@ public class Main {
         pathfinderAncestries.add(elf);
         pathfinderAncestries.add(dwarf);
         
+        // THis is a test for how it would somewhat look like
         Scanner scanner = new Scanner(System.in);
         String choice;
         double choiceVersion;

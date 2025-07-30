@@ -21,7 +21,6 @@ public class Ttrpg {
         if(name != null && !name.isEmpty()){
             this.name = name;
         }
-        
     }
 
     public void setVersion(double version){
