@@ -5,15 +5,19 @@ import main.model.*;
 import java.util.Scanner;
 
 public class Main {
+    
     public static void main(String[] args) {
-        Ttrpg system1 = new Ttrpg("Dungeons & Dragons", 5);
-        Ttrpg system2 = new Ttrpg("Dungeons & Dragons", 4);
-        Ttrpg system3 = new Ttrpg("Dungeons & Dragons", 3.5);
-        Ttrpg system4 = new Ttrpg("Dungeons & Dragons", 3);
-        Ttrpg system5 = new Ttrpg("Dungeons & Dragons", 2);
-        Ttrpg system6 = new Ttrpg("Dungeons & Dragons", 1);
-        Ttrpg system7 = new Ttrpg("Pathfinder", 1);
-        Ttrpg system8 = new Ttrpg("Pathfinder", 2);
+        String dnd = "Dungeons & Dragons";
+        String pf = "Pathfinder";
+
+        Ttrpg system1 = new Ttrpg(dnd, 5);
+        Ttrpg system2 = new Ttrpg(dnd, 4);
+        Ttrpg system3 = new Ttrpg(dnd, 3.5);
+        Ttrpg system4 = new Ttrpg(dnd, 3);
+        Ttrpg system5 = new Ttrpg(dnd, 2);
+        Ttrpg system6 = new Ttrpg(dnd, 1);
+        Ttrpg system7 = new Ttrpg(pf, 1);
+        Ttrpg system8 = new Ttrpg(pf, 2);
         ArrayList<Ttrpg> systems = new ArrayList<>();
         
         systems.add(system1);
@@ -39,7 +43,8 @@ public class Main {
         
         Scanner scanner = new Scanner(System.in);
         String choice;
-        double choiceVersion; 
+        double choiceVersion;
+
         String choiceAncestry;
 
         System.out.println("WLCOME TO TEST NPC GENERATOR");
@@ -55,10 +60,13 @@ public class Main {
             if (choice.equals(ttrpg.getName())) {
                 System.out.printf("Which Version is the %s: ", ttrpg.getName());
                 choiceVersion = scanner.nextDouble();
+                scanner.nextLine();
                 break;
             } 
         }
+
         System.out.println("THE list of ancestries for " + choice);
+
         switch (choice) {
             case "Dungeons & Dragons": 
             for (Ancestry ancestry: dndAncestries) {
@@ -69,15 +77,12 @@ public class Main {
                 System.out.println(ancestry.getName());
             }
         }
-        choiceAncestry = scanner.nextLine();
+
+        System.out.print("Choose which ancestry: ");
+        choiceAncestry = scanner.nextLine().toUpperCase();
         
-        //
-
-
+    
         scanner.close();
-        
-
-
     }
 
 }
