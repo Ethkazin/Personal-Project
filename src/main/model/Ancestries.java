@@ -2,6 +2,8 @@ package main.model;
 
 import java.util.ArrayList;
 
+import main.model.npc.Ancestry;
+
 public class Ancestries {
     private ArrayList<Ancestry> ancestries;
 

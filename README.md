@@ -20,3 +20,29 @@ My goal is to make a NPC generator for ttrpg related uses. It will allow the use
 - [ ] Generator emotion towards the part random but based a number the user imputs 
 - [ ] Appearance generator
 - [ ] Name generator
+
+
+Future Classes to implement
+(Abstract)
+- NPCComponent 
+- Generator 
+- PersonalityProfile 
+- TaggableEntity
+- Displayable
+
+(interfaces)
+- Generatable 
+- Describable
+- Taggable
+- Savable
+- Identifiable
+
+Enum
+- Occupation
+- Quirk
+- Race/Ancestry (maybe)
+- SystemType
+- PersonalityTract
+- Language
+- RegionType
+- WorldType (Fantasy, Sci-Fi, etc)

@@ -2,6 +2,8 @@ package main.model;
 
 import java.util.ArrayList;
 
+import main.model.npc.System;
+
 public class Systems {
     private ArrayList<System> systems;
 
