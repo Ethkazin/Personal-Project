@@ -1,5 +1,5 @@
 package main.model;
-// 
+
 public class Ancestry {
     private String name;
 
@@ -7,12 +7,11 @@ public class Ancestry {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-
 }

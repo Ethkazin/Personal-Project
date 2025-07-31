@@ -1,12 +1,13 @@
 package main.model;
 
-public class Ttrpg {
+public class System {
+    
     private String name;
     private double version;
     
-    public Ttrpg(String name, double version) {
-        this.name = name;
-        this.version = version;
+    public System(String name, double version) {
+        setName(name);
+        setVersion(version);
     }
 
     public String getName() {
@@ -16,6 +17,7 @@ public class Ttrpg {
     public double getVersion() {
         return version;
     }   
+
     
     public void setName(String name){
         if(name != null && !name.isEmpty()){
