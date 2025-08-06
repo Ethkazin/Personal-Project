@@ -1,4 +1,4 @@
-package main.ui;
+package main.model;
 
 public class NPCGenerator {
 

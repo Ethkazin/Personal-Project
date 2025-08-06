@@ -19,6 +19,8 @@ My goal is to make a NPC generator for ttrpg related uses. It will allow the use
     - Filter by ancestries, systems, etc
 - [ ] Generator emotion towards the part random but based a number the user imputs 
 - [ ] Appearance generator
+    - How the voice might sound ex: "Soft kind light voice with a slight stutter, no accent" 
+    - maybe a key phrase to get into character
 - [ ] Name generator
 
 
